@@ -1,8 +1,55 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.card-size {
+  width: 450px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+progress {
+  transition: all 0.3s ease-in-out;
+}
+
+#about {
+  height: 90vh;
+}
+
+figure img {
+  object-fit: cover;
+}
+.navbar-menu.is-active {
+    animation: navAnim .4s ease-in-out;
+}
+
+.right-arrow {
+  position: absolute;
+  right: -40px;
+  bottom: 300px;
+  transition: all .4s ease-in-out;
+}
+.left-arrow {
+  position: absolute;
+  left: -40px;
+  bottom: 300px;
+  transition: all .4s ease-in-out;
+}
+
+.right-arrow:hover{
+  transform: scale(1.2);
+}
+
+.left-arrow:hover {
+  transform: scale(1.2);
+}
+
+@keyframes navAnim {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        display: block;
+    }
+    100% {
+        opacity: 1;
+    }
+
+
 }
